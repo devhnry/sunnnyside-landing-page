@@ -57,6 +57,14 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate; }
 
+@keyframes updown {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
+
 html {
   font-size: 112.5%; }
 
@@ -81,7 +89,8 @@ body {
     padding: 1.2rem; }
   .header__arrow {
     margin-inline: auto;
-    padding-bottom: 8rem; }
+    padding-bottom: 8rem;
+    animation: updown 1s ease-in-out infinite; }
 
 .navigation {
   display: flex;

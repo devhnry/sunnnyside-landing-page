@@ -1,0 +1,47 @@
+.section{
+    text-align: center;
+    color: $clr-neutral-700;
+
+    &__textbox{
+        padding: 3.5rem 1.5rem;
+        display: grid;
+        gap: 1.2rem;
+    }
+
+    &__header{
+        font-size: 1.7rem;
+    }
+
+    &__text{
+        font-family: $font-sans;
+        font-weight: $fw-semibold;
+        font-size: 1rem;
+        color: $clr-neutral-300;
+    }
+
+    &__linkbox{
+        position: relative;
+    }
+
+    &__link{
+        color: $clr-neutral-700;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: $fw-black;
+        font-size: .8rem;
+    }
+
+    &__shadow{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -10;
+        background: rgba($clr-light-100, .3);
+        height: 8px;
+        width: max-content;
+        padding-inline: 3.2rem;
+        border-radius: 50vw;
+        margin-inline: auto;
+    }
+}

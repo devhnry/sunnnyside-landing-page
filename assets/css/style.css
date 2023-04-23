@@ -102,3 +102,38 @@ body {
     list-style: none;
     gap: 1rem;
     display: none; }
+
+.section {
+  text-align: center;
+  color: #23303e; }
+  .section__textbox {
+    padding: 3.5rem 1.5rem;
+    display: grid;
+    gap: 1.2rem; }
+  .section__header {
+    font-size: 1.7rem; }
+  .section__text {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #a7abae; }
+  .section__linkbox {
+    position: relative; }
+  .section__link {
+    color: #23303e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .8rem; }
+  .section__shadow {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -10;
+    background: rgba(250, 212, 0, 0.3);
+    height: 8px;
+    width: max-content;
+    padding-inline: 3.2rem;
+    border-radius: 50vw;
+    margin-inline: auto; }

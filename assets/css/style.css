@@ -63,6 +63,14 @@ html {
 body {
   font-family: "Fraunces", serif; }
 
+.header__text {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  line-height: 1.2;
+  color: white;
+  padding: 5.5rem 0 3rem; }
+
 .header {
   background-image: url(/Users/henry/Developer/devhnry/sunnyside-landing-page/assets/images/mobile/image-header.jpg);
   background-position: center;
@@ -71,13 +79,6 @@ body {
   text-align: center; }
   .header__box {
     padding: 1.2rem; }
-  .header__text {
-    text-transform: uppercase;
-    font-size: 2rem;
-    letter-spacing: 5px;
-    line-height: 1.2;
-    color: white;
-    padding: 5.5rem 0 3rem; }
   .header__arrow {
     margin-inline: auto;
     padding-bottom: 8rem; }

@@ -31,17 +31,26 @@
         font-size: .8rem;
     }
 
-    &__shadow{
+    &__link-shadow{
         position: absolute;
         top: 60%;
         left: 50%;
         transform: translateX(-50%);
         z-index: -10;
-        background: rgba($clr-light-100, .3);
         height: 8px;
         width: max-content;
         padding-inline: 3.2rem;
         border-radius: 50vw;
         margin-inline: auto;
+
+        &--transform{
+             background: rgba($clr-light-200, .3);
+        }
+
+        &--stand-out{
+             background: rgba($clr-light-100, .3);
+        }
     }
+
+    
 }

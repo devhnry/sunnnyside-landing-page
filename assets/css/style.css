@@ -144,7 +144,6 @@ body {
       background: rgba(254, 120, 103, 0.3); }
 
 .graphic-design {
-  color: #23303e;
   position: relative; }
   .graphic-design__textbox {
     position: absolute;
@@ -163,7 +162,6 @@ body {
     margin-bottom: 2rem; }
 
 .photography {
-  color: #23303e;
   position: relative; }
   .photography__textbox {
     position: absolute;
@@ -177,6 +175,6 @@ body {
     font-weight: 900;
     font-size: 1.3rem; }
   .photography__text {
-    color: #25564b;
+    color: #19536b;
     font-size: .8rem;
     margin-bottom: 2rem; }

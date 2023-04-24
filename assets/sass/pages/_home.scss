@@ -57,7 +57,6 @@
 }
 
 .graphic-design{
-    color: $clr-neutral-700;
     position: relative;
 
     &__textbox{
@@ -84,7 +83,6 @@
 
 
 .photography{
-    color: $clr-neutral-700;
     position: relative;
 
     &__textbox{
@@ -103,7 +101,7 @@
     }
 
     &__text{
-        color: $clr-dark-400;
+        color: $clr-dark-300;
         font-size: .8rem;
         margin-bottom: 2rem;
     }

@@ -150,7 +150,7 @@ body {
       filter: brightness(0) invert(1); }
 
 .header {
-  background-image: url("/Users/henry/Developer/devhnry/sunnyside-landing-page/assets/images/mobile/image-header.jpg");
+  background-image: url("/assets/images/mobile/image-header.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

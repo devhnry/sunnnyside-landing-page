@@ -1,6 +1,8 @@
 .section{
+    display: grid;
     text-align: center;
     color: $clr-neutral-700;
+    // grid-template-columns: repeat(2, 1fr);
 
     &__textbox{
         padding: 3.5rem 1.5rem;
@@ -10,6 +12,7 @@
 
     &__header{
         font-size: 1.7rem;
+        line-height: 1.2;
     }
 
     &__text{
@@ -51,6 +54,57 @@
              background: rgba($clr-light-100, .3);
         }
     }
+}
 
-    
+.graphic-design{
+    color: $clr-neutral-700;
+    position: relative;
+
+    &__textbox{
+        position: absolute;
+        bottom: 5%;
+        text-align: center;
+        display: grid;
+        gap: 1.2rem;
+        padding: 1rem;
+    }
+
+    &__header{
+        color: $clr-dark-400;
+        font-weight: $fw-black;
+        font-size: 1.3rem;
+    }
+
+    &__text{
+        color: $clr-dark-400;
+        font-size: .8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.photography{
+    color: $clr-neutral-700;
+    position: relative;
+
+    &__textbox{
+        position: absolute;
+        bottom: 5%;
+        text-align: center;
+        display: grid;
+        gap: 1.2rem;
+        padding: 1rem;
+    }
+
+    &__header{
+        color: $clr-dark-300;
+        font-weight: $fw-black;
+        font-size: 1.3rem;
+    }
+
+    &__text{
+        color: $clr-dark-400;
+        font-size: .8rem;
+        margin-bottom: 2rem;
+    }
 }

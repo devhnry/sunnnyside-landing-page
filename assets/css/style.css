@@ -1,7 +1,7 @@
 /*
 0 - 600px is where my normal styles apply
-600px - 900px: 
-900px - 1200px:
+600px - 900px:  750px
+750px - 1200px:  
 1200px -1800px : 
 1800px + : Big destop
 */
@@ -80,7 +80,7 @@ body {
   padding: 5.5rem 0 3rem; }
 
 .header {
-  background-image: url(/Users/henry/Developer/devhnry/sunnyside-landing-page/assets/images/mobile/image-header.jpg);
+  background-image: url("/Users/henry/Developer/devhnry/sunnyside-landing-page/assets/images/mobile/image-header.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,6 +104,7 @@ body {
     display: none; }
 
 .section {
+  display: grid;
   text-align: center;
   color: #23303e; }
   .section__textbox {
@@ -111,7 +112,8 @@ body {
     display: grid;
     gap: 1.2rem; }
   .section__header {
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    line-height: 1.2; }
   .section__text {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
@@ -140,3 +142,41 @@ body {
       background: rgba(250, 212, 0, 0.3); }
     .section__link-shadow--stand-out {
       background: rgba(254, 120, 103, 0.3); }
+
+.graphic-design {
+  color: #23303e;
+  position: relative; }
+  .graphic-design__textbox {
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    display: grid;
+    gap: 1.2rem;
+    padding: 1rem; }
+  .graphic-design__header {
+    color: #25564b;
+    font-weight: 900;
+    font-size: 1.3rem; }
+  .graphic-design__text {
+    color: #25564b;
+    font-size: .8rem;
+    margin-bottom: 2rem; }
+
+.photography {
+  color: #23303e;
+  position: relative; }
+  .photography__textbox {
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    display: grid;
+    gap: 1.2rem;
+    padding: 1rem; }
+  .photography__header {
+    color: #19536b;
+    font-weight: 900;
+    font-size: 1.3rem; }
+  .photography__text {
+    color: #25564b;
+    font-size: .8rem;
+    margin-bottom: 2rem; }

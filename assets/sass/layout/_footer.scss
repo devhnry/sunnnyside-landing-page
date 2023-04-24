@@ -1,0 +1,42 @@
+.footer{
+    background: $clr-footer;
+    display: grid;
+    gap: 3rem;
+    padding: 2.5rem;
+
+    &__box{
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    &__logo{
+        width: 8rem;
+        margin-inline: auto;
+
+        filter: invert(27%) sepia(10%) saturate(2019%) hue-rotate(116deg) brightness(50%) contrast(88%);
+        fill: $clr-dark-400;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__links{
+        color: $clr-dark-100;
+        text-decoration: none;
+        font-size: .8rem;
+        font-family: $font-sans;
+    }
+
+    &__socials{
+        display: flex;
+        gap: 1.3rem;
+        margin-inline: auto ;
+        margin-bottom: 1.2rem;
+    }
+}

@@ -79,6 +79,17 @@ body {
   color: white;
   padding: 5.5rem 0 3rem; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0; }
+
 .testimonial {
   display: grid;
   gap: 1.2rem;
@@ -100,6 +111,37 @@ body {
 .section-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+
+.footer {
+  background: #8dd3c1;
+  display: grid;
+  gap: 3rem;
+  padding: 2.5rem; }
+  .footer__box {
+    display: grid;
+    gap: 1.5rem; }
+  .footer__logo {
+    width: 8rem;
+    margin-inline: auto;
+    filter: invert(27%) sepia(10%) saturate(2019%) hue-rotate(116deg) brightness(50%) contrast(88%);
+    fill: #25564b; }
+  .footer__list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0; }
+  .footer__links {
+    color: #458c7e;
+    text-decoration: none;
+    font-size: .8rem;
+    font-family: "Barlow", sans-serif; }
+  .footer__socials {
+    display: flex;
+    gap: 1.3rem;
+    margin-inline: auto;
+    margin-bottom: 1.2rem; }
 
 .header {
   background-image: url("/Users/henry/Developer/devhnry/sunnyside-landing-page/assets/images/mobile/image-header.jpg");

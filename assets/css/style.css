@@ -97,6 +97,10 @@ body {
     font-size: .7rem;
     color: #a7abae; }
 
+.section-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
 .header {
   background-image: url("/Users/henry/Developer/devhnry/sunnyside-landing-page/assets/images/mobile/image-header.jpg");
   background-position: center;

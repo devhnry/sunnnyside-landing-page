@@ -137,11 +137,17 @@ body {
     text-decoration: none;
     font-size: .8rem;
     font-family: "Barlow", sans-serif; }
+    .footer__links:hover {
+      color: white; }
   .footer__socials {
     display: flex;
     gap: 1.3rem;
     margin-inline: auto;
     margin-bottom: 1.2rem; }
+  .footer__icons {
+    cursor: pointer; }
+    .footer__icons:hover {
+      filter: brightness(0) invert(1); }
 
 .header {
   background-image: url("/Users/henry/Developer/devhnry/sunnyside-landing-page/assets/images/mobile/image-header.jpg");
@@ -191,6 +197,10 @@ body {
     text-transform: uppercase;
     font-weight: 900;
     font-size: .8rem; }
+    .section__link:hover + .section__link-shadow--transform {
+      background: #fad400; }
+    .section__link:hover + .section__link-shadow--stand-out {
+      background: #fe7867; }
   .section__link-shadow {
     position: absolute;
     top: 60%;

@@ -31,6 +31,10 @@
         text-decoration: none;
         font-size: .8rem;
         font-family: $font-sans;
+
+        &:hover{
+            color: $clr-white;
+        }
     }
 
     &__socials{
@@ -38,5 +42,13 @@
         gap: 1.3rem;
         margin-inline: auto ;
         margin-bottom: 1.2rem;
+    }
+
+    &__icons{
+        cursor: pointer;
+
+        &:hover{
+            filter: brightness(0) invert(1);
+        }
     }
 }

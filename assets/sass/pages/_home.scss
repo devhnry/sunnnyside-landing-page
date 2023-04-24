@@ -32,6 +32,16 @@
         text-transform: uppercase;
         font-weight: $fw-black;
         font-size: .8rem;
+
+        &:hover  + &-shadow{
+             &--transform{
+                background: $clr-light-200;
+            }
+
+            &--stand-out{
+                background: $clr-light-100;
+            }
+        }
     }
 
     &__link-shadow{

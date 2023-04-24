@@ -79,6 +79,24 @@ body {
   color: white;
   padding: 5.5rem 0 3rem; }
 
+.testimonial {
+  display: grid;
+  gap: 1.2rem;
+  text-align: center;
+  padding: 3rem .5rem 0; }
+  .testimonial__profile {
+    width: 3.2rem;
+    border-radius: 100vw;
+    margin-inline: auto; }
+  .testimonial__text {
+    font-family: "Barlow", sans-serif;
+    color: #5a636c;
+    font-size: .9rem; }
+  .testimonial__department {
+    font-family: "Barlow", sans-serif;
+    font-size: .7rem;
+    color: #a7abae; }
+
 .header {
   background-image: url("/Users/henry/Developer/devhnry/sunnyside-landing-page/assets/images/mobile/image-header.jpg");
   background-position: center;
@@ -159,7 +177,8 @@ body {
   .graphic-design__text {
     color: #25564b;
     font-size: .8rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-family: "Barlow", sans-serif; }
 
 .photography {
   position: relative; }
@@ -177,4 +196,14 @@ body {
   .photography__text {
     color: #19536b;
     font-size: .8rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-family: "Barlow", sans-serif; }
+
+.section-testimonial {
+  padding: 2.5rem 1.5rem; }
+  .section-testimonial__header {
+    text-transform: uppercase;
+    color: #a7abae;
+    font-size: .8rem;
+    letter-spacing: 3.5px;
+    text-align: center; }

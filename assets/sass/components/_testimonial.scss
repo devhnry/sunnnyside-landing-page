@@ -1,0 +1,24 @@
+.testimonial{
+    display: grid;
+    gap: 1.2rem;
+    text-align: center;
+    padding: 3rem .5rem 0 ;
+
+    &__profile{
+        width: 3.2rem;
+        border-radius: 100vw;
+        margin-inline: auto;
+    }
+
+    &__text{
+        font-family: $font-sans;
+        color: $clr-neutral-600;
+        font-size: .9rem;
+    }
+
+    &__department{
+        font-family: $font-sans;
+        font-size: .7rem;
+        color: $clr-neutral-300;
+    }
+}

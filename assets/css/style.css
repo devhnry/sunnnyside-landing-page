@@ -71,6 +71,7 @@ html {
 body {
   font-family: "Fraunces", serif;
   scroll-behavior: smooth;
+  font-weight: 600;
   min-height: 100vh; }
 
 .header .nav__link {
@@ -195,35 +196,34 @@ body {
       transform: translateX(-50%);
       animation: updown 1s 2s infinite; }
 
-.section {
+.feature {
   display: grid;
   text-align: center;
   color: #23303e; }
-  .section__textbox {
-    padding: 3.5rem 1.5rem;
+  .feature__textbox {
+    padding: 3rem 1.5rem;
     display: grid;
     gap: 1.2rem; }
-  .section__header {
-    font-size: 1.7rem;
-    line-height: 1.2; }
-  .section__text {
+  .feature__header {
+    font-size: 2rem;
+    line-height: 1.1; }
+  .feature__text {
     font-family: "Barlow", sans-serif;
-    font-weight: 600;
     font-size: 1rem;
     color: #a7abae; }
-  .section__linkbox {
+  .feature__linkbox {
     position: relative; }
-  .section__link {
-    color: #23303e;
+  .feature__link {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: .8rem; }
-    .section__link:hover + .section__link-shadow--transform {
+    font-size: .9rem;
+    color: #23303e;
+    font-weight: 900; }
+    .feature__link:hover + .feature__link-shadow--transform {
       background: #fad400; }
-    .section__link:hover + .section__link-shadow--stand-out {
+    .feature__link:hover + .feature__link-shadow--stand {
       background: #fe7867; }
-  .section__link-shadow {
+  .feature__link-shadow {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -231,13 +231,13 @@ body {
     z-index: -10;
     height: 8px;
     width: max-content;
-    padding-inline: 3.2rem;
+    padding-inline: 3.5rem;
     border-radius: 50vw;
-    margin-inline: auto; }
-    .section__link-shadow--transform {
+    transition: all 200ms ease-in-out; }
+    .feature__link-shadow--transform {
       background: rgba(250, 212, 0, 0.3); }
-    .section__link-shadow--stand-out {
-      background: rgba(254, 120, 103, 0.3); }
+    .feature__link-shadow--stand {
+      background: rgba(254, 120, 103, 0.4); }
 
 .graphic-design {
   position: relative; }

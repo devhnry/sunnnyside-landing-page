@@ -89,6 +89,22 @@ body {
   color: white;
   text-transform: uppercase; }
 
+.feature__header {
+  font-size: 2rem;
+  line-height: 1.1; }
+
+.feature__text {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: #a7abae; }
+
+.feature__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9rem;
+  color: #23303e;
+  font-weight: 900; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -204,25 +220,12 @@ body {
     padding: 3rem 1.5rem;
     display: grid;
     gap: 1.2rem; }
-  .feature__header {
-    font-size: 2rem;
-    line-height: 1.1; }
-  .feature__text {
-    font-family: "Barlow", sans-serif;
-    font-size: 1rem;
-    color: #a7abae; }
   .feature__linkbox {
     position: relative; }
-  .feature__link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: .9rem;
-    color: #23303e;
-    font-weight: 900; }
-    .feature__link:hover + .feature__link-shadow--transform {
-      background: #fad400; }
-    .feature__link:hover + .feature__link-shadow--stand {
-      background: #fe7867; }
+  .feature__link:hover + .feature__link-shadow--transform {
+    background: #fad400; }
+  .feature__link:hover + .feature__link-shadow--stand {
+    background: #fe7867; }
   .feature__link-shadow {
     position: absolute;
     top: 60%;

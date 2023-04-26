@@ -69,15 +69,24 @@ html {
   font-size: 112.5%; }
 
 body {
-  font-family: "Fraunces", serif; }
+  font-family: "Fraunces", serif;
+  scroll-behavior: smooth;
+  min-height: 100vh; }
 
-.header__text {
-  text-transform: uppercase;
-  font-size: 2rem;
-  letter-spacing: 5px;
+.header .nav__link {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: white; }
+
+.header .hero__header {
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding: 1rem;
   line-height: 1.2;
+  letter-spacing: 5px;
   color: white;
-  padding: 5.5rem 0 3rem; }
+  text-transform: uppercase; }
 
 .visually-hidden {
   position: absolute;
@@ -154,24 +163,37 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center; }
-  .header__box {
-    padding: 1.2rem; }
-  .header__arrow {
-    margin-inline: auto;
-    padding-bottom: 8rem;
-    animation: updown 1s ease-in-out infinite; }
-
-.navigation {
-  display: flex;
-  justify-content: space-between; }
-  .navigation__logo {
-    width: 5rem; }
-  .navigation__list {
+  text-align: center;
+  min-height: 100vh;
+  padding: 1.3rem;
+  position: relative; }
+  .header .nav {
     display: flex;
-    list-style: none;
-    gap: 1rem;
-    display: none; }
+    justify-content: space-between;
+    align-items: center; }
+    .header .nav__logo {
+      width: 6rem; }
+    .header .nav__list {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      list-style: none;
+      display: none; }
+    .header .nav__menu {
+      background: transparent;
+      border: none;
+      outline: none; }
+  .header .hero {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%); }
+    .header .hero__icon {
+      position: absolute;
+      top: 150%;
+      left: 46%;
+      transform: translateX(-50%);
+      animation: updown 1s 2s infinite; }
 
 .section {
   display: grid;

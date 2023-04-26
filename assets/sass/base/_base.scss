@@ -4,4 +4,6 @@ html{
 
 body{
     font-family: $font-serif;
+    scroll-behavior: smooth;
+    min-height: 100vh;
 }

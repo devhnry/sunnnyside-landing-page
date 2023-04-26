@@ -4,30 +4,47 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    min-height: 100vh;
+    padding: 1.3rem;
+    position: relative;
 
-    &__box{
-        padding: 1.2rem;
-    }
-
-    &__arrow{
-        margin-inline: auto;
-        padding-bottom: 8rem;
-        animation: updown 1s ease-in-out infinite;
-    }
-}
-
-.navigation{
-    display: flex;
-    justify-content: space-between;
-
-    &__logo{
-        width: 5rem;
-    }
-
-    &__list{
+    .nav{
         display: flex;
-        list-style: none;
-        gap: $size-100;
-        display: none;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo{
+            width: 6rem;
+        }
+
+        &__list{
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+            list-style: none;
+            display: none;
+        }
+
+        &__menu{
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .hero{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-25%);
+
+        &__icon{
+            position: absolute;
+            top: 150%;
+            left: 46%;
+            transform: translateX(-50%);
+            animation: updown 1s 2s infinite;
+        }
     }
 }
+

@@ -1,10 +1,22 @@
 .header{
-    &__text{
-        text-transform: uppercase;
-        font-size: 2rem;
-        letter-spacing: 5px;
-        line-height: 1.2;
-        color: $clr-white;
-        padding: 5.5rem 0 3rem;
+    .nav{
+        &__link{
+            font-family: $font-sans;
+            font-weight: $fw-semibold;
+            text-decoration: none;
+            color: $clr-white;
+        }
+    }
+
+    .hero{
+        &__header{
+            font-size: 2.5rem;
+            font-weight: $fw-black;
+            padding: 1rem;
+            line-height: 1.2;
+            letter-spacing: 5px;
+            color: $clr-white;
+            text-transform: uppercase;
+        }
     }
 }

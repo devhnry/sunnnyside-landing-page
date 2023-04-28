@@ -72,7 +72,8 @@ body {
   font-family: "Fraunces", serif;
   scroll-behavior: smooth;
   font-weight: 600;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
 
 .header .nav__link {
   font-family: "Barlow", sans-serif;
@@ -81,7 +82,7 @@ body {
   color: white; }
 
 .header .hero__header {
-  font-size: 2.5rem;
+  font-size: 2.235rem;
   font-weight: 900;
   padding: 1rem;
   line-height: 1.2;
@@ -90,13 +91,15 @@ body {
   text-transform: uppercase; }
 
 .feature__header {
-  font-size: 2rem;
+  font-size: 1.78rem;
   line-height: 1.1; }
 
 .feature__text {
   font-family: "Barlow", sans-serif;
   font-size: 1rem;
-  color: #a7abae; }
+  color: #a7abae;
+  line-height: 30px;
+  letter-spacing: -0.13px; }
 
 .feature__link {
   text-decoration: none;
@@ -116,11 +119,21 @@ body {
   white-space: nowrap;
   border-width: 0; }
 
+.testimonials {
+  padding: 3rem 1.5rem; }
+  .testimonials__heading {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .89rem;
+    color: #a7abae;
+    padding-bottom: 1.5rem; }
+
 .testimonial {
   display: grid;
   gap: 1.2rem;
   text-align: center;
-  padding: 3rem .5rem 0; }
+  padding: 1.5rem 0; }
   .testimonial__profile {
     width: 3.2rem;
     border-radius: 100vw;
@@ -128,13 +141,15 @@ body {
   .testimonial__text {
     font-family: "Barlow", sans-serif;
     color: #5a636c;
-    font-size: .9rem; }
-  .testimonial__department {
+    font-size: .9rem;
+    max-width: 20rem;
+    margin-inline: auto; }
+  .testimonial__job {
     font-family: "Barlow", sans-serif;
     font-size: .7rem;
     color: #a7abae; }
 
-.section-gallery {
+.gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
 
@@ -150,7 +165,7 @@ body {
     width: 8rem;
     margin-inline: auto;
     filter: invert(27%) sepia(10%) saturate(2019%) hue-rotate(116deg) brightness(50%) contrast(88%);
-    fill: #25564b; }
+    fill: #25564a; }
   .footer__list {
     display: flex;
     align-items: center;
@@ -181,7 +196,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  min-height: 100vh;
+  min-height: 65vh;
   padding: 1.3rem;
   position: relative; }
   .header .nav {
@@ -189,7 +204,7 @@ body {
     justify-content: space-between;
     align-items: center; }
     .header .nav__logo {
-      width: 6rem; }
+      width: 6.8rem; }
     .header .nav__list {
       display: flex;
       gap: 1rem;
@@ -242,49 +257,30 @@ body {
     .feature__link-shadow--stand {
       background: rgba(254, 120, 103, 0.4); }
 
-.graphic-design {
-  position: relative; }
-  .graphic-design__textbox {
+.service {
+  position: relative;
+  min-height: 33.34rem;
+  max-height: 925px; }
+  .service__textbox {
+    position: relative;
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
+    color: #25564a;
+    padding: 1.3rem;
+    width: 22.1rem;
+    margin-inline: auto;
     display: grid;
-    gap: 1.2rem;
-    padding: 1rem; }
-  .graphic-design__header {
-    color: #25564b;
-    font-weight: 900;
-    font-size: 1.3rem; }
-  .graphic-design__text {
-    color: #25564b;
-    font-size: .8rem;
-    margin-bottom: 2rem;
+    gap: 1rem; }
+    .service__textbox--graphic {
+      color: #25564a; }
+    .service__textbox--photo {
+      color: #19536b; }
+  .service__header {
+    font-size: 1.56rem;
+    font-weight: 900; }
+  .service__text {
+    font-size: .89rem;
     font-family: "Barlow", sans-serif; }
-
-.photography {
-  position: relative; }
-  .photography__textbox {
-    position: absolute;
-    bottom: 5%;
-    text-align: center;
-    display: grid;
-    gap: 1.2rem;
-    padding: 1rem; }
-  .photography__header {
-    color: #19536b;
-    font-weight: 900;
-    font-size: 1.3rem; }
-  .photography__text {
-    color: #19536b;
-    font-size: .8rem;
-    margin-bottom: 2rem;
-    font-family: "Barlow", sans-serif; }
-
-.section-testimonial {
-  padding: 2.5rem 1.5rem; }
-  .section-testimonial__header {
-    text-transform: uppercase;
-    color: #a7abae;
-    font-size: .8rem;
-    letter-spacing: 3.5px;
-    text-align: center; }

@@ -7,4 +7,5 @@ body{
     scroll-behavior: smooth;
     font-weight: $fw-semibold;
     min-height: 100vh;
+    overflow-x: hidden;
 }

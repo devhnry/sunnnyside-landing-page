@@ -48,67 +48,41 @@
 
 }
 
-.graphic-design{
+.service{
     position: relative;
+    min-height: 33.34rem;
+    max-height: 925px;
 
     &__textbox{
+        position: relative;
         position: absolute;
-        bottom: 5%;
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-50%);
         text-align: center;
+        color: $clr-dark-400;
+        padding: 1.3rem;
+        width: 22.1rem;
+        margin-inline: auto;
+
         display: grid;
-        gap: 1.2rem;
-        padding: 1rem;
+        gap: 1rem;
+
+        &--graphic{
+            color: $clr-dark-400;
+        }
+        &--photo{
+            color: $clr-dark-300;
+        }
     }
 
     &__header{
-        color: $clr-dark-400;
+        font-size: 1.56rem;
         font-weight: $fw-black;
-        font-size: 1.3rem;
     }
 
     &__text{
-        color: $clr-dark-400;
-        font-size: .8rem;
-        margin-bottom: 2rem;
+        font-size: .89rem;
         font-family: $font-sans;
-    }
-}
-
-
-.photography{
-    position: relative;
-
-    &__textbox{
-        position: absolute;
-        bottom: 5%;
-        text-align: center;
-        display: grid;
-        gap: 1.2rem;
-        padding: 1rem;
-    }
-
-    &__header{
-        color: $clr-dark-300;
-        font-weight: $fw-black;
-        font-size: 1.3rem;
-    }
-
-    &__text{
-        color: $clr-dark-300;
-        font-size: .8rem;
-        margin-bottom: 2rem;
-        font-family: $font-sans;
-    }
-}
-
-.section-testimonial{
-    padding: 2.5rem 1.5rem;
-
-    &__header {
-        text-transform: uppercase;
-        color: $clr-neutral-300;
-        font-size: .8rem;
-        letter-spacing: 3.5px;
-        text-align: center;
     }
 }

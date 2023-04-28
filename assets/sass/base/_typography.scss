@@ -10,7 +10,7 @@
 
     .hero{
         &__header{
-            font-size: 2.5rem;
+            font-size: 2.235rem;
             font-weight: $fw-black;
             padding: 1rem;
             line-height: 1.2;
@@ -23,7 +23,7 @@
 
 .feature{
     &__header{
-        font-size: 2rem;
+        font-size: 1.78rem;
         line-height: 1.1;
     }
 
@@ -31,6 +31,8 @@
         font-family: $font-sans;
         font-size: 1rem;
         color: $clr-neutral-300;
+        line-height: 30px;
+        letter-spacing: -0.13px;
     }
 
     &__link{

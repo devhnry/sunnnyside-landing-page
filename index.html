@@ -61,8 +61,11 @@
     <!-- ==== Feature Section =====  -->
 
     <section class="feature | feature--transform" id="about">
-        <div>
-          <img class="feature__img transform__img" src="./assets/images/mobile/image-transform.jpg" alt="">
+        <div class="transform__img">
+          <picture>
+            <source srcset="./assets/images/desktop/image-transform.jpg" media="(min-width: 745px)">
+            <img class="feature__img" src="./assets/images/mobile/image-transform.jpg" alt="">
+          </picture>
         </div>
         <div class="feature__textbox">
           <h2 class="feature__header">Transform your brand</h2>
@@ -94,9 +97,12 @@
     </section>
 
   <!-- ===== Services ====  -->
-    <section id="services">
+    <section id="services" class="services">
       <div class="service service--graphic">
-        <img src="./assets/images/mobile/image-graphic-design.jpg" alt="">
+        <picture class="service__img">
+          <source class="service__img" srcset="./assets/images/desktop/image-graphic-design.jpg" media="(min-width: 900px)">
+           <img class="service__img" src="./assets/images/mobile/image-graphic-design.jpg" alt="">
+        </picture>
         <div class="service__textbox service__textbox--graphic">
           <h3 class="service__header">Graphic design</h3>
           <p class="service__text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
@@ -104,7 +110,10 @@
       </div>
 
       <div class="service service--photography">
-        <img src="./assets/images/mobile/image-photography.jpg" alt="">
+        <picture>
+          <source class="service__img" srcset="./assets/images/desktop/image-photography.jpg" media="(min-width: 900px)">
+          <img class="service__img" src="./assets/images/mobile/image-photography.jpg" alt="">
+        </picture>
         <div class="service__textbox service__textbox--photo">
           <h3 class="service__header">Photography</h3>
           <p class="service__text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
@@ -136,7 +145,7 @@
             </figcaption>
           </figure>
 
-          <figure class="testimonial">
+          <figure class="testimonial testimonial--lastchild">
             <img class="testimonial__profile" src="./assets/images/image-jennie.jpg" alt="">
             <blockquote class="testimonial__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</blockquote>
             <figcaption>
@@ -151,19 +160,19 @@
 
     <section class="gallery" id="projects">
       <picture>
-        <source srcset="assets/images/desktop/image-gallery-milkbottles.jpg" media="(min-width:1000px)"/>
+        <source srcset="assets/images/desktop/image-gallery-milkbottles.jpg" media="(min-width:745px)"/>
         <img class="gallery__img" src="./assets/images/mobile/image-gallery-milkbottles.jpg" alt="">
       </picture>
       <picture>
-        <source srcset="assets/images/desktop/image-gallery-orange.jpg" media="(min-width:1000px)"/>
+        <source srcset="assets/images/desktop/image-gallery-orange.jpg" media="(min-width:745px)"/>
         <img class="gallery__img" src="./assets/images/mobile/image-gallery-orange.jpg" alt="">
       </picture>
       <picture>
-        <source srcset="assets/images/desktop/image-gallery-cone.jpg" media="(min-width:1000px)"/>
+        <source srcset="assets/images/desktop/image-gallery-cone.jpg" media="(min-width:745px)"/>
         <img class="gallery__img" src="./assets/images/mobile/image-gallery-cone.jpg" alt="">
       </picture>
       <picture>
-        <source srcset="assets/images/desktop/image-gallery-sugar-cubes.jpg" media="(min-width:1000px)"/>
+        <source srcset="assets/images/desktop/image-gallery-sugarcubes.jpg" media="(min-width:745px)"/>
         <img class="gallery__img" src="./assets/images/mobile/image-gallery-sugar-cubes.jpg" alt="">
       </picture>
     </section>

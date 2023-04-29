@@ -7,6 +7,21 @@
     min-height: 65vh;
     padding: 1.3rem;
     position: relative;
+    transition: all 150ms ease-in-out;
+
+    @include respond(phone){
+        background-image: url("/assets/images/desktop/image-header.jpg");
+        min-height: 75vh;
+    }
+
+    @include respond(tab-port){
+        min-height: 85vh;
+        padding-top: 2.56rem;
+    }
+
+    @include respond(tab-land){
+        min-height: 100vh;
+    }
 
     .nav{
         display: flex;
@@ -15,6 +30,10 @@
 
         &__logo{
             width: 6.8rem;
+
+            @include respond(tab-port){
+                width: 9.45rem;
+            }
         }
 
         &__list{
@@ -36,12 +55,13 @@
         position: absolute;
         top: 25%;
         left: 50%;
+        width: 100vw;
         transform: translateX(-50%) translateY(-25%);
 
         &__icon{
             position: absolute;
             top: 150%;
-            left: 46%;
+            left: 50%;
             transform: translateX(-50%);
             animation: updown 1s 2s infinite;
         }

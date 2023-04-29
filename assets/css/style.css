@@ -89,10 +89,18 @@ body {
   letter-spacing: 5px;
   color: white;
   text-transform: uppercase; }
+  @media (min-width: 56.25em) {
+    .header .hero__header {
+      font-size: 3.2rem;
+      letter-spacing: 8.75px;
+      line-height: 69.5px; } }
 
 .feature__header {
   font-size: 1.78rem;
   line-height: 1.1; }
+  @media (min-width: 56.25em) {
+    .feature__header {
+      font-size: 2.23rem; } }
 
 .feature__text {
   font-family: "Barlow", sans-serif;
@@ -123,6 +131,11 @@ body {
   font-size: .89rem;
   color: #a7abae;
   padding-bottom: 1.5rem; }
+  @media (min-width: 56.25em) {
+    .testimonials__heading {
+      font-size: 1.13rem;
+      letter-spacing: 5px;
+      line-height: 24px; } }
 
 .testimonial__text {
   font-family: "Barlow", sans-serif;
@@ -151,12 +164,29 @@ body {
 
 .testimonials {
   padding: 3rem 1.35rem; }
+  @media (min-width: 75em) {
+    .testimonials {
+      padding-top: 8.89rem;
+      padding-bottom: 8.89rem; } }
+  @media (min-width: 56.25em) {
+    .testimonials__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 75em) {
+    .testimonials__container {
+      grid-template-columns: repeat(3, 1fr); } }
 
 .testimonial {
   display: grid;
   gap: 1.7rem;
   text-align: center;
   padding: 1.5rem 0; }
+  @media (min-width: 56.25em) {
+    .testimonial--lastchild {
+      grid-column: span 2 / span 2; } }
+  @media (min-width: 75em) {
+    .testimonial--lastchild {
+      grid-column: auto; } }
   .testimonial__profile {
     width: 3.2rem;
     border-radius: 100vw;
@@ -208,13 +238,28 @@ body {
   text-align: center;
   min-height: 65vh;
   padding: 1.3rem;
-  position: relative; }
+  position: relative;
+  transition: all 150ms ease-in-out; }
+  @media (min-width: 37.5em) {
+    .header {
+      background-image: url("/assets/images/desktop/image-header.jpg");
+      min-height: 75vh; } }
+  @media (min-width: 56.25em) {
+    .header {
+      min-height: 85vh;
+      padding-top: 2.56rem; } }
+  @media (min-width: 75em) {
+    .header {
+      min-height: 100vh; } }
   .header .nav {
     display: flex;
     justify-content: space-between;
     align-items: center; }
     .header .nav__logo {
       width: 6.8rem; }
+      @media (min-width: 56.25em) {
+        .header .nav__logo {
+          width: 9.45rem; } }
     .header .nav__list {
       display: flex;
       gap: 1rem;
@@ -229,11 +274,12 @@ body {
     position: absolute;
     top: 25%;
     left: 50%;
+    width: 100vw;
     transform: translateX(-50%) translateY(-25%); }
     .header .hero__icon {
       position: absolute;
       top: 150%;
-      left: 46%;
+      left: 50%;
       transform: translateX(-50%);
       animation: updown 1s 2s infinite; }
 
@@ -241,12 +287,35 @@ body {
   display: grid;
   text-align: center;
   color: #23303e; }
+  .feature__img {
+    width: 100%; }
+  @media (min-width: 46.5625em) {
+    .feature {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      .feature--transform .transform__img {
+        grid-row-start: 1;
+        grid-column-start: 2; } }
+  @media (min-width: 56.25em) {
+    .feature {
+      text-align: left; } }
   .feature__textbox {
     padding: 3rem 1.5rem;
     display: grid;
-    gap: 1.2rem; }
+    gap: 1.2rem;
+    align-content: center;
+    max-width: 28rem;
+    margin-inline: auto; }
+    @media (min-width: 46.5625em) {
+      .feature__textbox {
+        padding: 0 1.5rem; } }
   .feature__linkbox {
-    position: relative; }
+    position: relative;
+    width: max-content;
+    margin-inline: auto; }
+    @media (min-width: 56.25em) {
+      .feature__linkbox {
+        margin-inline: 0; } }
   .feature__link:hover + .feature__link-shadow--transform {
     background: #fad400; }
   .feature__link:hover + .feature__link-shadow--stand {
@@ -267,14 +336,20 @@ body {
     .feature__link-shadow--stand {
       background: rgba(254, 120, 103, 0.4); }
 
+@media (min-width: 46.5625em) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
 .service {
   position: relative;
-  min-height: 33.34rem;
-  max-height: 925px; }
+  max-height: 925px;
+  overflow: hidden; }
+  .service__img {
+    width: 100%; }
   .service__textbox {
-    position: relative;
     position: absolute;
-    bottom: 8%;
+    bottom: 3.27rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -284,6 +359,12 @@ body {
     margin-inline: auto;
     display: grid;
     gap: 1rem; }
+    @media (min-width: 56.25em) {
+      .service__textbox {
+        bottom: .7rem; } }
+    @media (min-width: 75em) {
+      .service__textbox {
+        bottom: 1.7rem; } }
     .service__textbox--graphic {
       color: #25564a; }
     .service__textbox--photo {
@@ -292,3 +373,6 @@ body {
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 56.25em) {
+    .gallery {
+      grid-template-columns: repeat(4, 1fr); } }

@@ -1,19 +1,10 @@
 .testimonials{
-    padding: 3rem 1.5rem;
-
-    &__heading{
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-size: .89rem;
-        color: $clr-neutral-300;
-        padding-bottom: 1.5rem;
-    }
+    padding: 3rem 1.35rem;
 }
 
 .testimonial{
     display: grid;
-    gap: 1.2rem;
+    gap: 1.7rem;
     text-align: center;
     padding: 1.5rem 0 ;
 
@@ -22,23 +13,4 @@
         border-radius: 100vw;
         margin-inline: auto;
     }
-
-    &__text{
-        font-family: $font-sans;
-        color: $clr-neutral-600;
-        font-size: .9rem;
-        max-width: 20rem;
-        margin-inline: auto;
-    }
-
-    &__job{
-        font-family: $font-sans;
-        font-size: .7rem;
-        color: $clr-neutral-300;
-    }
-}
-
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }

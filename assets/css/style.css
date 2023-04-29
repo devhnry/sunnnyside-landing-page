@@ -116,6 +116,28 @@ body {
   font-size: .89rem;
   font-family: "Barlow", sans-serif; }
 
+.testimonials__heading {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .89rem;
+  color: #a7abae;
+  padding-bottom: 1.5rem; }
+
+.testimonial__text {
+  font-family: "Barlow", sans-serif;
+  color: #5a636c;
+  font-size: 1rem;
+  max-width: 20rem;
+  margin-inline: auto;
+  line-height: 32px;
+  letter-spacing: -0.13px; }
+
+.testimonial__job {
+  font-family: "Barlow", sans-serif;
+  font-size: .78rem;
+  color: #a7abae; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -128,38 +150,17 @@ body {
   border-width: 0; }
 
 .testimonials {
-  padding: 3rem 1.5rem; }
-  .testimonials__heading {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: .89rem;
-    color: #a7abae;
-    padding-bottom: 1.5rem; }
+  padding: 3rem 1.35rem; }
 
 .testimonial {
   display: grid;
-  gap: 1.2rem;
+  gap: 1.7rem;
   text-align: center;
   padding: 1.5rem 0; }
   .testimonial__profile {
     width: 3.2rem;
     border-radius: 100vw;
     margin-inline: auto; }
-  .testimonial__text {
-    font-family: "Barlow", sans-serif;
-    color: #5a636c;
-    font-size: .9rem;
-    max-width: 20rem;
-    margin-inline: auto; }
-  .testimonial__job {
-    font-family: "Barlow", sans-serif;
-    font-size: .7rem;
-    color: #a7abae; }
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
 
 .footer {
   background: #8dd3c1;
@@ -286,3 +287,7 @@ body {
       color: #25564a; }
     .service__textbox--photo {
       color: #19536b; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }

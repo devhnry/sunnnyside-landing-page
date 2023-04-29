@@ -56,3 +56,32 @@
         font-family: $font-sans;
     }
 }
+
+.testimonials{
+    &__heading{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: .89rem;
+        color: $clr-neutral-300;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.testimonial{
+    &__text{
+        font-family: $font-sans;
+        color: $clr-neutral-600;
+        font-size: 1rem;
+        max-width: 20rem;
+        margin-inline: auto;
+        line-height: 32px;
+        letter-spacing: -0.13px;
+    }
+
+    &__job{
+        font-family: $font-sans;
+        font-size: .78rem;
+        color: $clr-neutral-300;
+    }
+}

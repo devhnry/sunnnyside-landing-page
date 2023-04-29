@@ -97,7 +97,7 @@ body {
 .feature__text {
   font-family: "Barlow", sans-serif;
   font-size: 1rem;
-  color: #a7abae;
+  color: #818798;
   line-height: 30px;
   letter-spacing: -0.13px; }
 
@@ -107,6 +107,14 @@ body {
   font-size: .9rem;
   color: #23303e;
   font-weight: 900; }
+
+.service__header {
+  font-size: 1.56rem;
+  font-weight: 900; }
+
+.service__text {
+  font-size: .89rem;
+  font-family: "Barlow", sans-serif; }
 
 .visually-hidden {
   position: absolute;
@@ -278,9 +286,3 @@ body {
       color: #25564a; }
     .service__textbox--photo {
       color: #19536b; }
-  .service__header {
-    font-size: 1.56rem;
-    font-weight: 900; }
-  .service__text {
-    font-size: .89rem;
-    font-family: "Barlow", sans-serif; }

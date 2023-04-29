@@ -30,7 +30,7 @@
     &__text{
         font-family: $font-sans;
         font-size: 1rem;
-        color: $clr-neutral-300;
+        color: $clr-neutral-400;
         line-height: 30px;
         letter-spacing: -0.13px;
     }
@@ -42,5 +42,17 @@
         color: $clr-neutral-700;
         font-weight: $fw-black;
 
+    }
+}
+
+.service{
+    &__header{
+        font-size: 1.56rem;
+        font-weight: $fw-black;
+    }
+
+    &__text{
+        font-size: .89rem;
+        font-family: $font-sans;
     }
 }

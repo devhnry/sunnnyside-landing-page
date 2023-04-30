@@ -5,6 +5,10 @@
             font-weight: $fw-semibold;
             text-decoration: none;
             color: $clr-white;
+
+            &:hover{
+                color: $clr-light-200;
+            }
         }
     }
 

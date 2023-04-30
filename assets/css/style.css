@@ -80,6 +80,8 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: white; }
+  .header .nav__link:hover {
+    color: #fad400; }
 
 .header .hero__header {
   font-size: 2.235rem;
@@ -247,7 +249,7 @@ body {
   @media (min-width: 56.25em) {
     .header {
       min-height: 85vh;
-      padding-top: 2.56rem; } }
+      padding-top: 1.89rem 2.67rem 0rem 2.23rem; } }
   @media (min-width: 75em) {
     .header {
       min-height: 100vh; } }
@@ -257,19 +259,45 @@ body {
     align-items: center; }
     .header .nav__logo {
       width: 6.8rem; }
+      @media (min-width: 37.5em) {
+        .header .nav__logo {
+          width: 8rem; } }
+      @media (min-width: 46.5625em) {
+        .header .nav__logo {
+          width: 9rem; } }
       @media (min-width: 56.25em) {
         .header .nav__logo {
           width: 9.45rem; } }
     .header .nav__list {
-      display: flex;
       gap: 1rem;
       justify-content: space-between;
       list-style: none;
       display: none; }
+      @media (min-width: 56.25em) {
+        .header .nav__list {
+          display: flex;
+          gap: 2.61rem; } }
+      .header .nav__list .contact {
+        background: white;
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.83rem;
+        color: #23303e;
+        padding: 0.89rem 1.67rem;
+        border-radius: 50vw;
+        transition: all 200ms ease-in-out; }
+        .header .nav__list .contact:hover {
+          background: rgba(255, 255, 255, 0.4);
+          color: white; }
     .header .nav__menu {
       background: transparent;
+      cursor: pointer;
       border: none;
       outline: none; }
+      @media (min-width: 56.25em) {
+        .header .nav__menu {
+          display: none; } }
   .header .hero {
     position: absolute;
     top: 25%;

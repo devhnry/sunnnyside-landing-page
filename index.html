@@ -80,8 +80,11 @@
       </section>
 
       <section class="feature | feature--stand">
-        <div>
-          <img class="feature__img stand__img" src="./assets/images/mobile/image-stand-out.jpg" alt="">
+        <div class="stand__img">
+          <picture>
+            <source srcset="./assets/images/desktop/image-stand-out.jpg" media="(min-width: 745px)">
+            <img class="feature__img" src="./assets/images/mobile/image-stand-out.jpg" alt="">
+          </picture>
         </div>
         <div class="feature__textbox">
           <h2 class="feature__header">Stand out to the right audience</h2>

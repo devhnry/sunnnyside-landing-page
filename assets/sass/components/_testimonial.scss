@@ -1,5 +1,7 @@
 .testimonials{
     padding: 3rem 1.35rem;
+    max-width: 79.43rem;
+    margin-inline: auto;
 
      @include respond(tab-land){
             padding-top: 8.89rem;

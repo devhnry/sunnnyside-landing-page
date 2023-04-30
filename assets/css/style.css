@@ -165,7 +165,9 @@ body {
   border-width: 0; }
 
 .testimonials {
-  padding: 3rem 1.35rem; }
+  padding: 3rem 1.35rem;
+  max-width: 79.43rem;
+  margin-inline: auto; }
   @media (min-width: 75em) {
     .testimonials {
       padding-top: 8.89rem;

@@ -164,6 +164,12 @@ body {
   white-space: nowrap;
   border-width: 0; }
 
+.hidden {
+  display: none; }
+
+.opacity-50 {
+  opacity: 50%; }
+
 .testimonials {
   padding: 3rem 1.35rem;
   max-width: 79.43rem;
@@ -300,6 +306,44 @@ body {
       @media (min-width: 56.25em) {
         .header .nav__menu {
           display: none; } }
+  .header .mobile {
+    width: 330px;
+    background: white;
+    position: absolute;
+    top: 12%;
+    right: 1.5rem;
+    z-index: 30;
+    padding: 1.5rem;
+    -webkit-clip-path: polygon(92% 8%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 8%);
+    clip-path: polygon(92% 8%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 8%); }
+    @media (min-width: 56.25em) {
+      .header .mobile {
+        display: none; } }
+    .header .mobile__items {
+      padding: 1rem;
+      display: block; }
+    .header .mobile__list {
+      gap: 1rem;
+      list-style: none;
+      padding: 0; }
+    .header .mobile__link {
+      font-family: "Barlow", sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      color: #818798; }
+      .header .mobile__link:hover {
+        color: #fad400; }
+    .header .mobile .contact {
+      background: #fad400;
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.83rem;
+      color: #23303e;
+      padding: 0.89rem 1.67rem;
+      border-radius: 50vw;
+      transition: all 200ms ease-in-out;
+      margin-bottom: 2rem; }
   .header .hero {
     position: absolute;
     top: 25%;
@@ -309,7 +353,7 @@ body {
     .header .hero__icon {
       position: absolute;
       top: 150%;
-      left: 50%;
+      left: 48.5%;
       transform: translateX(-50%);
       animation: updown 1s 2s infinite; }
 

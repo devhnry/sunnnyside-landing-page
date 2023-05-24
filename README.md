@@ -30,8 +30,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [ SunnySide | Landing Page (SASS + ViteJS + Grid Layout)]()
-- Live Site URL: [SunnySide | Landing Page ] ()
+- Live Site URL: [SunnySide | Landing Page ] (https://sunnnyside-landing-page.vercel.app/)
 
 <br>
 
